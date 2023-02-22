@@ -1,0 +1,65 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 2
+
+   Author: Michael McMurray
+   Date:   2/21/23
+   
+   Filename: code3-2_layout.css
+
+*/
+
+header {
+   padding: 10px;
+   outline-style: dashed;
+   grid-column: 1 / span 6;
+}
+
+a {
+   padding: 10px;
+   outline-style: dashed;
+   display: block;
+}
+
+.article {
+   padding: 10px;
+   outline-style: dashed;
+}
+
+#intro {
+   grid-column: 1 / span 2;
+   grid-row: 3 / span 2;
+}
+
+#main {
+   grid-column: 3 / span 3;
+   grid-row: 3 / span 2;
+}
+
+.aside {
+   padding: 10px;
+   outline-style: dashed;
+}
+
+footer {
+   padding: 10px;
+   outline-style: dashed;
+   grid-column: span 2;
+}
+
+body {
+   width: 90%;
+   max-width: 1024px;
+   min-width: 640px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 50px 30px 1fr 1fr 100px;
+   grid-gap: 15px;
+}
